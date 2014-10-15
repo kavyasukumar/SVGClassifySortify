@@ -1,0 +1,22 @@
+/*svg{
+	background-color: seagreen;
+}*/
+.juror{
+	fill:white;
+	stroke: black;
+}
+
+#sortselectors{
+	list-style: none;
+}
+#sortselectors li{
+	display: inline;
+	width:20%;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+}
+
+.axis path{
+	display: none;
+}
