@@ -1,6 +1,8 @@
-/*svg{
-	background-color: seagreen;
-}*/
+body{
+	font-family: Segoe UI light, Arial Narrow, sans-serif;
+	width: 80%;
+	margin: auto;
+}
 .juror{
 	fill:white;
 	stroke: black;
@@ -8,13 +10,24 @@
 
 #sortselectors{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+
 }
 #sortselectors li{
-	display: inline;
-	width:20%;
+	display: inline-block;
 	border-right: 1px solid gray;
 	border-bottom: 1px solid gray;
 	padding: 10px;
+	background: gray;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#sortselectors li.selected{
+	background: #F2CD13;
+	font-family: Segoe UI, Arial, sans-serif;
+	font-size: 1.2em;
 }
 
 .axis path{

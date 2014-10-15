@@ -4,21 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <title>Rural juror</title>
-    <script src="/script/jquery-2.1.1.min.js"></script>
-    <script src="/script/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./script/jquery-2.1.1.min.js"></script>
+    <script src="./script/d3.v3.min.js" charset="utf-8"></script>
     <link href="./style/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+	<h1> Meet the jurors of the Goodman retrial	</h1>
+	<p>Here we will put in some descriptive text on what this is. But this isn't where the help text goes. That will be with the '?'</p>
 	<ul id='sortselectors'>
-		<li id="no" class="selector linear">reset</li>
+		<li id="no" class="selector linear selected">Juror number</li>
 		<li id='age' class="selector linear">Age</li>
 		<li id='race' class="selector ordinal">Race</li>
 		<li id='gender' class="selector ordinal">Gender</li>
-		<li id='q1' class="selector ordinal">Q1</li>
-		<li id='q2' class="selector ordinal">Q2</li>
-	</ul>
+		<li id='marital' class="selector ordinal">Marital Status</li>
+		<li id='priorjury' class="selector ordinal">Served on jury</li>
+		<li id='lawenforcement' class="selector ordinal">Been in law enforcement work</li>
+		<li id='witness' class="selector ordinal">Been a witness to a crime</li>
+		<li id='victim' class="selector ordinal">Been a victim of a crime</li>
+		<li id='arrested' class="selector ordinal">Been arrested or accused of a crime</li>
+		<li id='lawsuit' class="selector ordinal">Involved in a civil lawsuit</li>
+		<li id='claims' class="selector ordinal">Made any claims for personal injury</li>
+		<li id='claimAgainst' class="selector ordinal">Had a claim for personal injury made against you</li>
+	</ul>	
+	<div id="viz"></div>
     <script src="./script/script.js" charset="utf-8"></script>
-    User designed by <a href="http://www.thenounproject.com/catalarem">Rémy Médard</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
-    User designed by <a href="http://www.thenounproject.com/lynnthemac">Lynn Christensen</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+    <p>Icons designed by <a href="http://www.thenounproject.com/markshorter">Mark Shorter</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
 </body>
 </html>
