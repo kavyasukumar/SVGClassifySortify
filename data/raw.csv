@@ -1,10 +1,28 @@
-no,Age,Gender,Race,marital,priorjury,lawenforcement,witness,victim,arrested,lawsuit,claims,claimAgainst
-1,35,Female,White,Single,No,Yes,Yes,No,No,Yes,Yes,No
-2,24,Female,Black,Married,Civil,Yes,Yes,Yes,Yes,No,No,No
-3,25,Male,Hispanic,Divorced,Criminal,No,No,No,Yes,No,No,Yes
-4,65,Female,Asian,Widow(er),No,No,No,No,Yes,Yes,Yes,Yes
-5,28,Female,White,Single,No,Yes,No,Yes,No,Yes,Yes,No
-6,47,Male,Black,Married,No,No,No,Yes,Yes,Yes,Yes,No
-7,45,Male,White,Widow(er),No,No,No,Yes,Yes,Yes,No,Yes
-8,76,Male,Black,Married,Civil,Yes,Yes,Yes,Yes,No,No,Yes
-9,76,Female,Hispanic,Married,Civil,Yes,No,No,No,No,Yes,Yes
+no,originalno,type,flyears,gender,race,city,marital,Children,occupation,priorjury,lawenforcement,witness,victim,arrested,lawsuit,claims,claimAgainst,funfact
+1,7,Main,12,Female,Black,Brandon,Married,1,"Medical coder, Florida Hospital",No,NA,No,No,No,No,No,No,"On jury service: “It would be an inconvenience, not a hardship. … But I would exercise, which I don’t do at home.” "
+2,10,Main,58,Female,Black,Carrollwood ,Divorced,3,Former phlebotomist,No,Both,No,No,No,No,No,No,Warned court that she used to draw blood for police; chosen anyway.
+3,52,Main,5,Male,Black,NA,Divorced,0,"Cast operator, TSE Industries",No,No,No,No,Yes,No,Yes,No,"Had felony conviction in New York; caught with computer in his room during trial, a violation of judge's order."
+4,26,Main,6,Male,White,Tampa,Married,3,Sales rep for Aqua Chill,No,No,Yes,Yes,No,No,No,No,Told the court he's fine going without commission and living on  base salary for three weeks. 
+5,34,Main,47,Male,White,Tampa,Divorced,1,Works for Hillsborough County,Yes,No,No,No,No,No,No,No,
+6,39,Main,4,Male,White,Tampa,Single,0,"Senior analyst, VF Corp.",No,No,No,No,No,No,No,No,"Told court: ""I live on Facebook. But I need a vacation."""
+7,55,Alternate,12,Female,Hispanic,NA,Divorced,3,BayCare asessment worker,No,Yes,No,No,No,No,No,No,Former child assessment worker; now work in child abuse prevention.
+8,57,Alternate,14,Female,White,Thonotosassa,Single,1,Hillsborough County public schools,No,No,No,No,No,No,Yes,No,
+9,113,Alternate,8,Female,Black,Plant City,Married,0,"YMCA yoga, Zumba instructor",No,No,No,No,No,No,No,No,"Described herself as organized, kind, friendly."
+10,96,Alternate,62,Female,White,Dover,Married,4,Insurance agent,Yes,No,No,No,No,No,No,No,Had a son who fell from bunk bed; fractured his skull; heard hecklers at local hotel.
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,16 @@
+{   
+	"no":  "Juror no",
+    "flyears":  "Years in Florida",
+    "gender":  "Gender",
+    "race":  "Race",
+    "city":  "City",
+    "marital":  "Marital status",
+    "occupation":  "Occupation",
+    "priorjury":  "served on a jury before",
+    "lawenforcement":  "worked in law enforcement",
+    "witness":  "been a witness to a crime",
+    "victim":  "been a victim of a crime",
+    "arrested":  "been arrested",
+    "lawsuit":  "been involved in a lawsuit",
+    "claims":  "filed claims for personal injury"
+}
