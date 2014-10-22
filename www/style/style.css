@@ -1,7 +1,6 @@
+/*---------------------CMS overrides-----------------------*/
 body{
-	font-family: Segoe UI light, Arial Narrow, sans-serif;
-	width: 80%;
-	margin: auto;
+	font-family: "Segoe UI light", Arial Narrow, sans-serif;
 }
 .juror{
 	fill:white;
@@ -17,7 +16,7 @@ body{
 	border-top: 1px solid gray;
 
 }
-#sortselectors li{
+#sortselectors li, #fakefilter{
 	border-right: 1px solid gray;
 	border-bottom: 1px solid gray;
 	padding: 5px;
@@ -25,6 +24,9 @@ body{
 	margin: 2px;
 	cursor: pointer;
 	display: inline-block;
+}
+#fakefilter{
+	cursor: auto;
 }
 ::selection{
 	background: #F2CD13;
@@ -48,10 +50,10 @@ body{
 	position: relative;
 }
 
-.modal{
+.mymodal{
 	display: none;
 }
-.modal.show{
+.mymodal.show{
 	display: block;
 	background: white;
 	position: absolute;
@@ -65,11 +67,11 @@ body{
 	box-shadow: 3px 3px 5px 6px #ccc;
 }
 
-.modal #content{
+.mymodal #content{
 	padding: 10px;
 }
 
-.modal #closeBtn{
+.mymodal #closeBtn{
 	cursor: pointer;
 	text-align: right;
 	font-size: 1.1em;
@@ -88,10 +90,26 @@ body{
 }
 
 #modaljurorno{
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top:3px;
+	padding-bottom:3px;
 	font-size: 2em;
 	text-align: center;		
 	border-bottom: 1px solid #F2CD13;
 	border-top: 1px solid #F2CD13;
+}
+#legend span img{
+	height: 20px;
+}
+#legend {
+border-top: 1px solid gray;
+}
+
+#legend span {
+display: inline-block;
+padding-top: 5px;
+padding-right: 10px;
 }
 
 @media only screen and (max-width : 768px) {
@@ -100,13 +118,13 @@ body{
 	}
 }
 @media only screen and (max-width : 480px) {
-	.modal.show{
+	.mymodal.show{
 		left: 7%;
 	}
 }
 
 @media only screen and (max-width : 320px) {
-	.modal.show{
+	.mymodal.show{
 		width:98%;
 		left:1%;
 	}

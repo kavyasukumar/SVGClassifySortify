@@ -3,37 +3,74 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Rural juror</title>
+    <title>Goodman trial jurors</title>
     <script src="./script/jquery-2.1.1.min.js"></script>
-    <script src="./script/d3.v3.min.js" charset="utf-8"></script>
     <link href="./style/style.css" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">	
 </head>
 <body>
-	<h1> Meet the jurors of the Goodman retrial	</h1>
-	<p>Selected over four days in Tampa, the six jurors and four alternates from Hillsborough County remain unidentified but answers they gave on a jury questionnaire provides a glimpse into their background. They are not allowed access to media accounts during the trial and they are being housed on the public’s dime at an undisclosed Palm Beach County hotel.</p>
-	<ul id='sortselectors'>
-		<li id="no" class="selector linear selected">Reset</li>
-		<li id='flyears' class="selector linear">Years in Florida</li>
-		<li id='race' class="selector ordinal">Race</li>
-		<li id='gender' class="selector ordinal">Gender</li>
-		<li id='marital' class="selector ordinal">Marital Status</li>
-		<li id='priorjury' class="selector ordinal">Served on jury</li>
-		<li id='lawenforcement' class="selector ordinal">Been in law enforcement work</li>
-		<li id='witness' class="selector ordinal">Been a witness to a crime</li>		
-		<li id='victim' class="selector ordinal">Been a victim of a crime</li>
-		<li id='arrested' class="selector ordinal">Been arrested or accused of a crime</li>		
-		<!-- <li id='lawsuit' class="selector ordinal">Involved in a civil lawsuit</li> -->
-		<li id='claims' class="selector ordinal">Made any claims for personal injury</li>
-		<!-- <li id='claimAgainst' class="selector ordinal">Had a claim for personal injury made against them</li> -->
-	</ul>	
-	<div id="viz">
-		<div class="modal">
-			<div id="closeBtn"> close</div>
-			<div id="content"></div>
+	<script type="text/javascript">
+		function AddCss(path,name)
+		{
+			var $ = document; 
+		    var head  = $.getElementsByTagName('head')[0];
+		    var link  = $.createElement('link');
+		    link.rel  = 'stylesheet';
+		    link.type = 'text/css';
+		    link.href= path+name;
+		    head.appendChild(link);	
+		}
+		//Add you external css files here 
+		var path = 'http://apps.mypalmbeachpost.com/interactives/goodmanjurors/style/';
+    	AddCss(path,'style.css');
+	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<div id="fakebody">
+		<h1> Meet the jurors of the Goodman retrial	</h1>
+		<p>Selected over four days in Tampa, the six jurors and four alternates from Hillsborough County remain unidentified but answers they gave on a jury questionnaire provide a glimpse into their background. They are not allowed access to media accounts during the trial and they are being housed on the public’s dime at an undisclosed Palm Beach County hotel.</p>
+
+		<p>Click on <span id="fakefilter">filters</span> below to group the jurors on the selected criteria. Click on the juror images to learn more.</p>
+		<div id="legend">
+			<span>
+				<img src="http://apps.mypalmbeachpost.com/interactives/goodmanjurors/icons/male.svg" height="20px"/>
+				<img src="http://apps.mypalmbeachpost.com/interactives/goodmanjurors/icons/female.svg" height="20px"/>
+				: Main jurors
+			</span>
+			<span>
+				<img src="http://apps.mypalmbeachpost.com/interactives/goodmanjurors/icons/graymale.svg" height="20px"/>
+				<img src="http://apps.mypalmbeachpost.com/interactives/goodmanjurors/icons/grayfemale.svg" height="20px"/>
+				: Alternate jurors
+			</span>
+			<span>
+				NA : Not Answered
+			</span>
 		</div>
+		<ul id='sortselectors'>
+			<li id="no" class="selector linear selected">Juror no.</li>
+			<li id='race' class="selector ordinal">Race</li>
+			<li id='gender' class="selector ordinal">Gender</li>
+			<li id='marital' class="selector ordinal">Marital Status</li>
+			<li id="children" class="selector ordinal">No. of Children</li>			
+			<li id='flyears' class="selector linear">Years in Florida</li>
+			<li id='priorjury' class="selector ordinal">Served on jury</li>
+			<li id='lawenforcement' class="selector ordinal">Been in law enforcement work</li>
+			<li id='witness' class="selector ordinal">Been a witness to a crime</li>		
+			<li id='victim' class="selector ordinal">Been a victim of a crime</li>
+			<li id='arrested' class="selector ordinal">Been arrested or accused of a crime</li>		
+			<!-- <li id='lawsuit' class="selector ordinal">Involved in a civil lawsuit</li> -->
+			<li id='claims' class="selector ordinal">Made any claims for personal injury</li>
+			<!-- <li id='claimAgainst' class="selector ordinal">Had a claim for personal injury made against them</li> -->
+		</ul>	
+		<div id="viz">
+			<div class="mymodal">
+				<div id="closeBtn"> close</div>
+				<div id="content"></div>
+			</div>
+		</div>
+	    <script src="./script/script.js" charset="utf-8"></script>
+	    <hr/>
+	    <p>Icons designed by <a href="http://www.thenounproject.com/markshorter">Mark Shorter</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
 	</div>
-    <script src="./script/script.js" charset="utf-8"></script>
-    <p>Icons designed by <a href="http://www.thenounproject.com/markshorter">Mark Shorter</a> from the <a href="http://www.thenounproject.com">Noun Project</a></p>
 </body>
 </html>
