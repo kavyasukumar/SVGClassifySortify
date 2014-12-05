@@ -176,7 +176,8 @@ function drawViz(){
 
     function ordinalTransformer(prop){
         //set up axis
-            ordinalScale.domain($data.map(function (d){ return d[prop];}));
+            ordinalScale.domain($data.sort(function(a,b){ return d3.ascending(a[prop],b[prop])})
+                .map(function (d){ return d[prop];}));
             addAxis(ordinalAxis);
 
             //now calculate transforms and animate transition
